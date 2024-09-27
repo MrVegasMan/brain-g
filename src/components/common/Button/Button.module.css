@@ -9,17 +9,17 @@
 
 /* Common styles for all buttons */
 .button-wrapper {
-    background: var(--btn-color-bg, #000);
-    border-radius: var(--btn-border-radius);
-    cursor: pointer;
     display: flex;
+    width: fit-content;
     padding: 2px;
-    text-align: center;
-    text-transform: uppercase;
     transform-origin: bottom;
     transition: all var(--transition-time, 0.3s ease);
+    border-radius: var(--btn-border-radius);
+    background: var(--btn-color-bg, #000);
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
     user-select: none;
-    width: fit-content;
 }
 
 .button-wrapper:hover {
@@ -27,33 +27,33 @@
 }
 
 .button-span {
-    align-items: center;
-    background: var(--btn-bg-color);
-    border-radius: calc(var(--btn-border-radius) - 2px);
-    box-shadow: var(--btn-box-shadow-inset) var(--btn-box-shadow-color) inset;
     display: flex;
-    gap: 4px;
-    height: 100%;
-    justify-content: center;
-    overflow: hidden;
-    padding: var(--btn-padding);
     position: relative;
-    transition: background var(--transition-time, 0.3s ease);
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    height: 100%;
+    padding: var(--btn-padding);
+    overflow: hidden;
+    transition: background var(--transition-time, 0.3s ease);
+    border-radius: calc(var(--btn-border-radius) - 2px);
+    background: var(--btn-bg-color);
+    box-shadow: var(--btn-box-shadow-inset) var(--btn-box-shadow-color) inset;
+    gap: 4px;
 }
 
 /* Pseudo element for bottom border */
 .button-span::after {
-    background-color: var(--btn-border-color);
-    bottom: 0;
     content: '';
-    height: var(--btn-border-width);
-    left: 0;
     position: absolute;
     right: 0;
+    bottom: 0;
+    left: 0;
+    height: var(--btn-border-width);
     transition: height var(--transition-time, 0.3s ease);
-    user-select: none;
+    background-color: var(--btn-border-color);
     pointer-events: none;
+    user-select: none;
 }
 
 .button-span:hover::after {

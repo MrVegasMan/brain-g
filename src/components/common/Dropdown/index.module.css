@@ -4,16 +4,16 @@
 }
 
 .dropdownToggle {
-    width: 100%;
-    cursor: pointer;
-    color: var(--monochrome-1, #FFF);
-    gap: 4px;
     display: inline-flex;
-    padding: 4px 8px;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 4px 8px;
     border-radius: 6px;
     background: var(--purple-4, #552CB8);
+    color: var(--monochrome-1, #FFF);
+    cursor: pointer;
+    gap: 4px;
 }
 
 .dropdownToggle:hover {
@@ -35,15 +35,15 @@
 }
 
 .dropdownMenuWrapper {
-    margin-top: 12px;
     position: absolute;
-    background-color: transparent;
-    border:none;
+    z-index: 100;
     max-height: 0;
+    margin-top: 12px;
     overflow-y: hidden;
     transition: max-height 0.3s ease;
+    border:none;
+    background-color: transparent;
     user-select: none;
-    z-index: 100;
 }
 
 .dropdownMenuWrapper.open {
@@ -59,39 +59,39 @@
 }
 
 .dropdownMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     width: 100%;
     height: 100%;
-    overflow-y: auto;
-    cursor: pointer;
-    display: flex;
     padding: 16px 12px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 4px;
-    border-radius: 6px;
+    overflow-y: auto;
     border: 2px solid var(--purple-1, #0D0627);
+    border-radius: 6px;
     background: var(--purple-3, #3C159C);
+    cursor: pointer;
+    gap: 4px;
 }
 
 .dropdownLi {
-    background: none;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    padding: 10px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: flex-start;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
     gap: 8px;
 }
 
 .dropdownLi a, .dropdownLi p {
-    text-decoration: none;
     display: block;
     color: var(--monochrome-1, #FFF);
+    text-decoration: none;
     white-space: nowrap
 }
 

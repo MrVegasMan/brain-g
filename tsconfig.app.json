@@ -39,10 +39,10 @@
         "src/hooks/*"
       ],
       "@icon/*": [
-        "src/assets/icon/*"
+        "src/assets/ico/*"
       ],
       "@styles/*": [
-        "./src/styles/modules/*"
+        "./src/styles/*"
       ]
     },
     "allowSyntheticDefaultImports": true

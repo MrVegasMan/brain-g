@@ -21,17 +21,17 @@
 }
 
 .ico-24px {
-  min-height: 24px;
+  width: 24px;
   min-width: 24px;
   height: 24px;
-  width: 24px;
+  min-height: 24px;
 }
 
 .ico-56px {
-  min-height: 56px;
+  width: 56px;
   min-width: 56px;
   height: 56px;
-  width: 56px;
+  min-height: 56px;
 }
 
 /* ----------------------- Text Color ------------------------------ */
@@ -40,7 +40,7 @@
 }
 
 .text-current {
-  color: currentColor;
+  color: currentcolor;
 }
 
 .text-transparent {
@@ -113,50 +113,50 @@
 }
 
 .line-clamp-1 {
-  overflow: hidden;
   display: -webkit-box;
+  overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
 }
 
 .line-clamp-2 {
-  overflow: hidden;
   display: -webkit-box;
+  overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
 
 .line-clamp-3 {
-  overflow: hidden;
   display: -webkit-box;
+  overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 }
 
 .line-clamp-4 {
-  overflow: hidden;
   display: -webkit-box;
+  overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
 }
 
 .line-clamp-5 {
-  overflow: hidden;
   display: -webkit-box;
+  overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
 }
 
 .line-clamp-6 {
-  overflow: hidden;
   display: -webkit-box;
+  overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 6;
 }
 
 .line-clamp-none {
-  overflow: visible;
   display: block;
+  overflow: visible;
   -webkit-box-orient: horizontal;
   -webkit-line-clamp: none;
 }
@@ -266,33 +266,33 @@
 // vertical
 
 .px-4 {
-  padding-left: 4px;
   padding-right: 4px;
+  padding-left: 4px;
 }
 
 .px-8 {
-  padding-left: 8px;
   padding-right: 8px;
+  padding-left: 8px;
 }
 
 .px-10 {
-  padding-left: 10px;
   padding-right: 10px;
+  padding-left: 10px;
 }
 
 .px-12 {
-  padding-left: 12px;
   padding-right: 12px;
+  padding-left: 12px;
 }
 
 .px-16 {
-  padding-left: 16px;
   padding-right: 16px;
+  padding-left: 16px;
 }
 
 .px-20 {
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 }
 
 //horizontal

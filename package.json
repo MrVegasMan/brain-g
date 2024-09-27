@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint --fix .",
-    "lint:css": "stylelint '**/*.css' --fix",
+    "lint:scss": "stylelint '**/*.{scss,css}' --fix",
     "check": "tsc --noEmit",
     "preview": "vite preview"
   },
@@ -44,6 +44,8 @@
     "postcss-loader": "^8.1.1",
     "sass": "^1.79.3",
     "stylelint": "^16.9.0",
+    "stylelint-config-property-sort-order-smacss": "^10.0.0",
+    "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-config-css-modules": "^4.4.0",
     "stylelint-config-recommended": "^14.0.1",
     "stylelint-config-standard": "^36.0.1",

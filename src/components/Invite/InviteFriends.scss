@@ -1,6 +1,6 @@
 .referral-link-input {
-  background: transparent;
   border: none;
+  background: transparent;
 
   &:focus {
     outline-color: var(--background-brand-high);
@@ -15,7 +15,7 @@
     color: var(--content-static-dark-primary);
   }
 
-  &::-moz-selection {
+  &::selection {
     background: var(--background-brand-high); /* Firefox */
     color: var(--content-static-dark-primary);
   }

@@ -9,14 +9,14 @@
 }
 
 .radio-button {
-    align-items: center;
-    background-color: var(--beige-9, #FFF6E8);
-    border-radius: 8px;
-    cursor: pointer;
     display: flex;
-    gap: 6px;
-    padding: 6px 8px;
     position: relative;
+    align-items: center;
+    padding: 6px 8px;
+    border-radius: 8px;
+    background-color: var(--beige-9, #FFF6E8);
+    cursor: pointer;
+    gap: 6px;
 }
 
 .radio-button input[type="radio"] {
@@ -24,10 +24,10 @@
 }
 
 .radio-icon {
-    border-radius: 50%;
+    width: 16px;
     height: 16px;
     overflow: hidden;
-    width: 16px;
+    border-radius: 50%;
 }
 
 .radio-label {
@@ -36,32 +36,32 @@
 }
 
 .custom-radio {
-    border: 2px solid var(--beige-5, #DABF97);
-    border-radius: 50%;
     display: inline-block;
-    height: 20px;
-    margin-left: 6px;
     position: relative;
     width: 20px;
+    height: 20px;
+    margin-left: 6px;
+    border: 2px solid var(--beige-5, #DABF97);
+    border-radius: 50%;
 }
 
 .custom-radio::after {
-    border: 2px solid var(--beige-9, #FFF6E8);
-    border-radius: 50%;
-    bottom: 0;
     content: '';
-    height: 100%;
-    left: 0;
-    margin: auto;
     position: absolute;
     right: 0;
-    transition: all var(--transition-time, 0.3s ease);
+    bottom: 0;
+    left: 0;
     width: 100%;
-    user-select: none;
+    height: 100%;
+    margin: auto;
+    transition: all var(--transition-time, 0.3s ease);
+    border: 2px solid var(--beige-9, #FFF6E8);
+    border-radius: 50%;
     pointer-events: none;
+    user-select: none;
 }
 
 .custom-radio.checked::after {
-    background-color: var(--beige-1, #6D5B3E);
     border-color: var(--beige-9, #FFF6E8);
+    background-color: var(--beige-1, #6D5B3E);
 }

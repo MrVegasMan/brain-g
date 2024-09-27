@@ -1,19 +1,9 @@
-@import url("reset.scss");
-@import url("fonts.scss");
-@import url("typography.scss");
-@import url("mods.scss");
+@import "reset";
+@import "fonts";
+@import "typography";
+@import "mods";
 
 :root {
-  font-size: 16px;
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-
   /* Basic fonts переделать */
   --font-family-primary: 'Bai Jamjuree', sans-serif;
   --font-family-secondary: 'Jersey 20', sans-serif;
@@ -54,23 +44,19 @@
   /* Colors */
   --layer-floor-0: #111014;
   --layer-floor-1: #1C1B20;
-
   --content-neutral-primary: #FFF;
   --content-neutral-tertiary: #8E8E8E;
   --content-static-dark-primary: #111014;
   --content-neutral-secondary: #B3B2B2;
   --content-positive-primary: #DBFDA5;
-
   --background-positive-high: #A9F927;
   --background-brand-high: #FF5387;
   --background-neutral-low: #1C1B20;
-
-  --overlay-neutral: rgba(142, 142, 142, 0.04);
-
-  --neutral-secondary: rgba(17, 16, 20, 0.08);
-  --border-neutral-tertiary: rgba(255, 255, 255, 0.04);
-  --border-neutral-secondary: rgba(255, 255, 255, 0.06);
-  --border-neutral-primary: rgba(255, 255, 255, 0.12);
+  --overlay-neutral: rgb(142 142 142 / 4%);
+  --neutral-secondary: rgb(17 16 20 / 8%);
+  --border-neutral-tertiary: rgb(255 255 255 / 4%);
+  --border-neutral-secondary: rgb(255 255 255 / 6%);
+  --border-neutral-primary: rgb(255 255 255 / 12%);
 
 
   /* Transitions */
@@ -90,16 +76,24 @@ html, body {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
   background-color: var(--layer-floor-0);
   color: var(--content-neutral-primary);
   font-family: var(--font-family-primary), sans-serif;
+  font-size: 16px;
+  text-align: center;
 }
 
 body {
-  margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
+  margin: 0;
+  place-items: center;
 }
 
 main {

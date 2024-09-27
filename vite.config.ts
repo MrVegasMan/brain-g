@@ -14,11 +14,7 @@ export default defineConfig({
                 manualChunks(id) {
                     if (id.includes('node_modules')) {
                         const libraries = [
-                            'react',
-                            'lottie-web',
-                            'lottie-react',
-                            'react-slick',
-                            'slick-carousel'
+                            'react'
                         ];
                         const pattern = new RegExp(
                             '/node_modules/(' + libraries.join('|') + ')/'
@@ -44,6 +40,7 @@ export default defineConfig({
         react(),
         svgr({
             include: '**/*.svg',
+            exclude: '**/*.svg?bg',
             svgrOptions: {
                 plugins: ['@svgr/plugin-svgo', '@svgr/plugin-jsx'],
                 svgoConfig: {
@@ -114,8 +111,8 @@ export default defineConfig({
             '@views': fileURLToPath(new URL('./src/views', import.meta.url)),
             '@hooks': fileURLToPath(new URL('./src/hooks', import.meta.url)),
             '@assets': fileURLToPath(new URL('./src/assets', import.meta.url)),
-            '@icon': fileURLToPath(new URL('./src/assets/icon', import.meta.url)),
-            '@styles': fileURLToPath(new URL('./src/styles/modules', import.meta.url))
+            '@icon': fileURLToPath(new URL('./src/assets/ico', import.meta.url)),
+            '@styles': fileURLToPath(new URL('./src/styles', import.meta.url))
         }
     },
     css: {
@@ -126,6 +123,13 @@ export default defineConfig({
         preprocessorOptions: {
             scss: {
                 api: 'modern-compiler' // or "modern"
+                //         additionalData: `
+                // @import "@/styles/_var.scss";
+                // @import "@/styles/_color.scss";
+                // @import "@/styles/_function.scss";
+                // @import "@/styles/_mixins.scss";
+                // @import "@/styles/_breakpoints.scss";
+                // `
             }
         },
         postcss: {
