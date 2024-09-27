@@ -1,0 +1,109 @@
+@import url("reset.scss");
+@import url("fonts.scss");
+@import url("typography.scss");
+@import url("mods.scss");
+
+:root {
+  font-size: 16px;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  /* Basic fonts переделать */
+  --font-family-primary: 'Bai Jamjuree', sans-serif;
+  --font-family-secondary: 'Jersey 20', sans-serif;
+
+  /* General values чекнуть */
+  --letter-spacing-0: 0;
+  --line-height-100: 100%;
+  --line-height-120: 120%;
+  --line-height-130: 130%;
+  --line-height-140: 140%;
+
+  /* Text sizes переделать */
+  --font-size-h1: 32px;
+  --font-size-h2: 24px;
+  --font-size-h3: 20px;
+  --font-size-body-l: 20px;
+  --font-size-body-m: 16px;
+  --font-size-body-s: 14px;
+  --font-size-body-xs: 13px;
+
+
+  /* Indents переделать */
+  --indents-64: 64px;
+  --indents-56: 56px;
+  --indents-48: 48px;
+  --indents-40: 40px;
+  --indents-32: 32px;
+  --indents-24: 24px;
+  --indents-16: 16px;
+  --indents-12: 12px;
+  --indents-8: 8px;
+  --indents-4: 4px;
+
+  /* Radius */
+  --radius-550: 20px;
+  --radius-300: 8px;
+
+  /* Colors */
+  --layer-floor-0: #111014;
+  --layer-floor-1: #1C1B20;
+
+  --content-neutral-primary: #FFF;
+  --content-neutral-tertiary: #8E8E8E;
+  --content-static-dark-primary: #111014;
+  --content-neutral-secondary: #B3B2B2;
+  --content-positive-primary: #DBFDA5;
+
+  --background-positive-high: #A9F927;
+  --background-brand-high: #FF5387;
+  --background-neutral-low: #1C1B20;
+
+  --overlay-neutral: rgba(142, 142, 142, 0.04);
+
+  --neutral-secondary: rgba(17, 16, 20, 0.08);
+  --border-neutral-tertiary: rgba(255, 255, 255, 0.04);
+  --border-neutral-secondary: rgba(255, 255, 255, 0.06);
+  --border-neutral-primary: rgba(255, 255, 255, 0.12);
+
+
+  /* Transitions */
+  --transition-time: 0.3s ease;
+  --transition-easing: cubic-bezier(0.37, 0, 0.63, 1);
+
+  color-scheme: light dark;
+  font-family: "Bai Jamjuree", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+  text-rendering: optimizelegibility;
+}
+
+html, body {
+  scrollbar-gutter: stable;
+}
+
+body {
+  background-color: var(--layer-floor-0);
+  color: var(--content-neutral-primary);
+  font-family: var(--font-family-primary), sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+

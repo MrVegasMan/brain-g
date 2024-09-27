@@ -1,0 +1,11 @@
+.offer-card {
+  background: var(--background-neutral-low);
+  position: relative;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  text-align: start;
+  padding: 16px 20px;
+  align-items: center;
+}

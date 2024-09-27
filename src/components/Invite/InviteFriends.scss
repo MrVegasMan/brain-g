@@ -1,0 +1,29 @@
+.referral-link-input {
+  background: transparent;
+  border: none;
+
+  &:focus {
+    outline-color: var(--background-brand-high);
+  }
+
+  &:active {
+    outline-color: var(--background-brand-high);
+  }
+
+  &::selection {
+    background: var(--background-brand-high); /* Safari */
+    color: var(--content-static-dark-primary);
+  }
+
+  &::-moz-selection {
+    background: var(--background-brand-high); /* Firefox */
+    color: var(--content-static-dark-primary);
+  }
+}
+
+.copy-button {
+  top: 0;
+  right: 0;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+}
