@@ -37,9 +37,11 @@ export function ButtonTap({ onClick }: ButtonTapProps) {
                 onClick={handleClick}
             />
             <button
-                className="tap-btn bg-brand-high bg-center bg-no-repeat rounded-full"
+                className="absolute"
                 onClick={() => handleToggle(1)}
-            />
+            >
+                change particles
+            </button>
         </>
     );
 }

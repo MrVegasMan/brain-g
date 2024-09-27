@@ -4,6 +4,9 @@
 @import "mods";
 
 :root {
+
+  --max-width-container: 700px;
+
   /* Basic fonts переделать */
   --font-family-primary: 'Bai Jamjuree', sans-serif;
   --font-family-secondary: 'Jersey 20', sans-serif;
@@ -80,7 +83,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  max-width: 700px;
+  max-width: var(--max-width-container);
   margin: 0 auto;
   background-color: var(--layer-floor-0);
   color: var(--content-neutral-primary);
