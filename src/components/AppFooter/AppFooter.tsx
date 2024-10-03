@@ -7,8 +7,8 @@ import { ButtonFooter } from '../Button/ButtonFooter.tsx';
 export function AppFooter() {
     const navigate = useNavigate();
 
-    const goIqPage = () => {
-        navigate('/iq');
+    const goLeaderBoardPage = () => {
+        navigate('/leaderboard');
     };
     const goOfferwallPage = () => {
         navigate('/offerwall');
@@ -25,7 +25,7 @@ export function AppFooter() {
 
     return (
         <nav className="app-footer flex flex-row justify-between items-end">
-            <ButtonFooter onClick={goIqPage} footerBtnTitle="IQ">
+            <ButtonFooter onClick={goLeaderBoardPage} footerBtnTitle="IQ">
                 <span>
                     <svg
                         width="28"

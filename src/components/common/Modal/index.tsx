@@ -5,10 +5,8 @@ import { createContainer } from '@/utils/portal.ts';
 
 import styles from './index.module.css';
 
-import HeadModelStyle from '@styles/baseBlock.module.css';
 import BaseButton from '@components/common/Button/baseButton.tsx';
 import Portal from '@components/common/Portal';
-import ClosedIcon from '@icon/closed-16.svg';
 
 const MODAL_CONTAINER_ID = 'modal-container-id';
 
@@ -92,13 +90,13 @@ const Modal = ({ title, onClose, children, ...attrs }: ModalProps) => {
                 <Portal id={MODAL_CONTAINER_ID}>
                     <div className={styles.modal_wrap} ref={rootRef} {...attrs}>
                         <div>
-                            <header className={`${styles.modal_header} ${HeadModelStyle.head}`}>
+                            <header className={`${styles.modal_header}`}>
                                 {title}
                                 <BaseButton
                                     type="default"
                                     onClick={handleClose}
                                 >
-                                    <ClosedIcon />
+                                    Close Ico
                                 </BaseButton>
                             </header>
                             <div className={styles.modal_content}>

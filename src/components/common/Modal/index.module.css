@@ -1,5 +1,5 @@
 :root {
-    --background-content-color: var(--beige-9, #FFF6E8);
+    --background-content-color: #FFF6E8;
 }
 
 .modal_wrap {
@@ -16,14 +16,14 @@
 }
 
 .modal_header {
-     padding: 10px 8px 10px 16px;
-     gap: 16px;
-     border: 2px solid var(--monochrome-8, #000);
+    padding: 10px 8px 10px 16px;
+    gap: 16px;
+    border: 2px solid #000;
 }
 
 .modal_title {
     margin: 0 0 10px;
-    color: var(--monochrome-8, #000);
+    color: #000;
     font-size: 16px;
     font-style: normal;
     font-weight: 800;
@@ -32,6 +32,6 @@
 
 .modal_content {
     padding: 16px;
-    border: 2px solid var(--monochrome-8, #000);
+    border: 2px solid #000;
     background: var(--background-content-color);
 }

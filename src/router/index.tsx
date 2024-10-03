@@ -2,10 +2,10 @@ import type { RouteObject } from 'react-router/dist/lib/context';
 
 import LayoutDefault from '@/layouts/default.tsx';
 import Home from '@/views/Home';
-import Iq from '@/views/Iq';
 
 import Boosters from '@views/Boosters';
 import Friends from '@views/Friends';
+import LeaderBoard from '@views/LeaderBoard';
 import Offerwall from '@views/Offerwall';
 import Tapalka from '@views/Tapalka';
 
@@ -19,8 +19,8 @@ const routes = [
                 element: <Home />
             },
             {
-                path: '/iq',
-                element: <Iq />
+                path: '/leaderboard',
+                element: <LeaderBoard />
             },
             {
                 path: '/offerwall',
