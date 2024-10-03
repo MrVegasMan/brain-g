@@ -25,7 +25,7 @@ export function AppFooter() {
 
     return (
         <nav className="app-footer flex flex-row justify-between items-end">
-            <ButtonFooter onClick={goLeaderBoardPage} footerBtnTitle="IQ">
+            <ButtonFooter onClick={goLeaderBoardPage} footerBtnTitle="Leaders">
                 <span>
                     <svg
                         width="28"
